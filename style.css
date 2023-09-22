@@ -1,0 +1,174 @@
+:root {
+    --sainsburysOrange: rgba(228,80,0); 
+    --aldiBlue: rgba(0, 70, 137);
+    --sainsOrangeLight: rgba(228, 80, 0, 0.174);
+    --aldiBlueLight: rgba(0, 70, 137, 0.17);
+}
+
+.page-wrapper {
+    /* max-width: 1600px; */
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+.list-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 12rem;
+}
+
+.list-inputs button {
+    width: 11rem;
+    margin-left: 0.25rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.list-inputs input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sainsburys-input {
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+.aldi-input {
+    margin: 1rem;
+    border-radius: 5px;
+    border: none;
+    height: 1.4rem;
+}
+
+.sainsburys-input button {
+    background-color: var(--sainsburysOrange);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 1.4rem;
+}
+.aldi-input button {
+    background-color: var(--aldiBlue);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 1.4rem;
+}
+
+.shopping-lists {
+    display: flex;
+    justify-content: center;
+    min-height: 75vh;
+}
+
+.sainsburys-list {
+    border: 1px solid var(--sainsburysOrange);
+    margin: 2rem;
+    width: 40%;
+    min-height: 100%;
+    background-color: var(--sainsOrangeLight);
+}
+.aldi-list {
+    border: 1px solid var(--aldiBlue);
+    margin: 2rem;
+    width: 40%;
+    min-height: 100%;
+    background-color: var(--aldiBlueLight);
+}
+
+.sains-logo-img {
+    width: 7rem;
+    margin: 0;
+    justify-content: center;
+}
+.aldi-logo-img {
+    width: 5rem;
+}
+
+.sainsburys-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem 0 1.5rem;
+    height: 5rem;
+}
+.aldi-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem 0 1.5rem;
+    height: 5rem;
+}
+
+.shopping-lists ul {
+    list-style: none;
+}
+
+.shopping-lists li {
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+}
+
+.removeSainsItemButton {
+    margin-left: 0.5rem;
+    color: var(--sainsburysOrange);
+
+}
+.removeAldiItemButton {
+    margin-left: 0.5rem;
+    color: var(--aldiBlue);
+}
+
+/* Media query - mobile */
+@media screen and (max-width: 395px) {
+    .removeSainsItemButton {
+        margin-left: 0.25rem;
+    }
+    .removeAldiItemButton {
+        margin-left: 0.25rem;
+    }
+    .shopping-lists ul {
+        margin-left: 0;
+        padding-left: 0.75rem;
+    }
+    .shopping-lists li {
+        font-size: 1.3rem;
+    }
+    input {
+        width: 8rem;
+    }
+    .list-inputs button {
+        width: 10rem;
+        margin-left: 0.25rem;
+    }
+    .shopping-lists {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sainsburys-list {
+        margin: 1rem 0 0.75rem 0;
+        width: 90%;
+    }
+    .aldi-list {
+        margin: 0.75rem 0 1rem 0;
+        width: 90%;
+    }
+    .sainsburys-logo {
+        padding-top: 1rem;
+        height: 1.5rem;
+    }
+    .sainsburys-list ul {
+        margin-top: 0.5rem;
+    }
+}

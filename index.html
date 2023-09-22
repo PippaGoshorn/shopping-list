@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <h1>Shopping List</h1>
+        </header>
+
+        <div class="list-inputs">
+            <div class="sainsburys-input">
+                <input type="text" id="sainsItemInput" placeholder="Enter a list item" minlength="3" maxlength="100">
+                <button type="submit" id="addSainsItemButton">Add to Sainsbury's list</button>
+            </div>
+            <div class="aldi-input">    
+                <input type="text" id="aldiItemInput" placeholder="Enter a list item" minlength="3" maxlength="100">
+                <button type="submit" id="addAldiItemButton">Add to Aldi list</button>
+            </div>
+        </div>
+
+        <section class="shopping-lists">
+            <div class="sainsburys-list">
+                <div class="sainsburys-logo">
+                    <img class="sains-logo-img" src="./img/sainsburys-logo.svg">
+                </div>
+                <ul id="sainsShoppingList"></ul>
+            </div>
+            <div class="aldi-list">
+                <div class="aldi-logo">
+                    <img class="aldi-logo-img" src="./img/aldi-logo.png">
+                </div>
+                <ul id="aldiShoppingList"></ul>
+            </div>
+        </section>
+    </div>
+    <script src="https://kit.fontawesome.com/d43de0d35d.js" crossorigin="anonymous"></script>
+</body>
+</html>
