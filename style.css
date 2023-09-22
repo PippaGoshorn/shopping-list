@@ -159,10 +159,12 @@ input {
     .sainsburys-list {
         margin: 1rem 0 0.75rem 0;
         width: 90%;
+        min-height: 40vh;
     }
     .aldi-list {
         margin: 0.75rem 0 1rem 0;
         width: 90%;
+        min-height: 40vh;
     }
     .sainsburys-logo {
         padding-top: 1rem;
