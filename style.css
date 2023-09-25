@@ -130,7 +130,7 @@ input {
 }
 
 /* Media query - mobile */
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 416px) {
     .removeSainsItemButton {
         margin-left: 0.25rem;
     }
