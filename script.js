@@ -60,11 +60,11 @@ function addAldiItem() {
     }
 }
 
-// clearSainsList.addEventListener('click', function (e) {
-//     e.preventDefault();
-//     window.location.reload();
-// })
-// clearAldiList.addEventListener('click', function (e) {
-//     e.preventDefault();
-//     window.location.reload();
-// })
+clearSainsList.addEventListener('click', function (e) {
+    e.preventDefault();
+    sainsShoppingList.innerHTML = '';
+})
+clearAldiList.addEventListener('click', function (e) {
+    e.preventDefault();
+    aldiShoppingList.innerHTML = '';
+})
