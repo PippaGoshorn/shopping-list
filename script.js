@@ -4,6 +4,8 @@ const addSainsItemButton = document.getElementById('addSainsItemButton');
 const addAldiItemButton = document.getElementById('addAldiItemButton');
 const sainsShoppingList = document.getElementById('sainsShoppingList');
 const aldiShoppingList = document.getElementById('aldiShoppingList');
+const clearSainsList = document.getElementById('clearSainsList');
+const clearAldiList = document.getElementById('clearAldiList');
 
 addSainsItemButton.addEventListener('click', addSainsItem);
 addAldiItemButton.addEventListener('click', addAldiItem);
@@ -57,3 +59,12 @@ function addAldiItem() {
     aldiItemInput.value = '';
     }
 }
+
+clearSainsList.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.location.reload();
+})
+clearAldiList.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.location.reload();
+})

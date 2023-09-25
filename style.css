@@ -30,7 +30,7 @@ input {
 }
 
 .list-inputs button {
-    width: 11rem;
+    width: 9rem;
     margin-left: 0.25rem;
     font-family: 'Montserrat', sans-serif;
 }
@@ -77,6 +77,8 @@ input {
     width: 40%;
     min-height: 100%;
     background-color: var(--sainsOrangeLight);
+    display: flex;
+    flex-direction: column;
 }
 .aldi-list {
     border: 1px solid var(--aldiBlue);
@@ -84,6 +86,8 @@ input {
     width: 40%;
     min-height: 100%;
     background-color: var(--aldiBlueLight);
+    display: flex;
+    flex-direction: column;
 }
 
 .sains-logo-img {
@@ -129,6 +133,23 @@ input {
     color: var(--aldiBlue);
 }
 
+#clearSainsList {
+    margin-top: 3rem;
+    display: flex;
+    align-self: center;
+    color: var(--sainsburysOrange);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+#clearAldiList {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-self: center;
+    color: var(--aldiBlue);
+    font-weight: 600;
+}
+
 /* Media query - mobile */
 @media screen and (max-width: 416px) {
     .removeSainsItemButton {
@@ -145,10 +166,10 @@ input {
         font-size: 1.3rem;
     }
     input {
-        width: 8rem;
+        width: 9rem;
     }
     .list-inputs button {
-        width: 10rem;
+        width: 8.5rem;
         margin-left: 0.25rem;
     }
     .shopping-lists {
