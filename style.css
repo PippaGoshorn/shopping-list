@@ -134,15 +134,16 @@ input {
 }
 
 #clearSainsList {
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: flex;
     align-self: center;
+    justify-self: end;
     color: var(--sainsburysOrange);
     font-weight: 600;
     margin-bottom: 1rem;
 }
 #clearAldiList {
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     display: flex;
     align-self: center;
