@@ -42,7 +42,7 @@ function createListItem(parentList, itemText, storageKey) {
     parentList.appendChild(listItem);
 }
 
-// Function to remove a list item (ISSUE: removes from displayed list, but not removing from local storage on page refresh)
+// Function to remove a list item (ISSUE: removes from displayed list, but not removing from local storage so displays on page refresh)
 function removeListItem(parentList, listItem, storageKey) {
     parentList.removeChild(listItem);
 // Determine which shopping list to update based on the storage key
